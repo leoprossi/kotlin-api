@@ -1,8 +1,8 @@
-package com.example.Example.controller
+package com.example.controller
 
-import com.example.Example.domain.Student
-import com.example.Example.domain.request.StudentRequest
-import com.example.Example.service.Studentservice
+import com.example.domain.Student
+import com.example.domain.request.StudentRequest
+import com.example.service.Studentservice
 import io.swagger.annotations.ApiOperation
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*

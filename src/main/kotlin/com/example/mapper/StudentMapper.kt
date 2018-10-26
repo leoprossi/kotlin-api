@@ -1,7 +1,7 @@
-package com.example.Example.mapper
+package com.example.mapper
 
-import com.example.Example.domain.Student
-import com.example.Example.domain.request.StudentRequest
+import com.example.domain.Student
+import com.example.domain.request.StudentRequest
 
 class StudentMapper {
     companion object {

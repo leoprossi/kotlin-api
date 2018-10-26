@@ -1,4 +1,4 @@
-package com.example.Example.domain.request
+package com.example.domain.request
 
 import javax.validation.constraints.NotBlank
 import javax.validation.constraints.NotNull

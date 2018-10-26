@@ -1,13 +1,18 @@
-package com.example.Example.service
+package com.example.service
 
-import com.example.Example.domain.Student
-import com.example.Example.domain.request.StudentRequest
-import com.example.Example.mapper.StudentMapper
-import com.example.Example.repository.StudentRepository
+import com.example.domain.Student
+import com.example.domain.request.StudentRequest
+import com.example.mapper.StudentMapper
+import com.example.repository.StudentRepository
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
-
+/*
+    It seems like private unchangable properties are automatically
+    injected as a autowired dependencies. Although, you can find an
+    exapmle on how to inject dependencies in a more 'java' way on
+    the integration test classes.
+ */
 @Service
 class Studentservice(private val studentRepository: StudentRepository) {
 
