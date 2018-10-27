@@ -20,13 +20,9 @@ class SwaggerConfig {
     fun swaggerSettings(): Docket {
         return Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.Example.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.controller"))
                 .paths(PathSelectors.any())
                 .build()
-    }
-
-    private fun apiKey(): ApiKey {
-        return ApiKey("OAuth", "Authorization", "header")
     }
 
     @GetMapping("/")
